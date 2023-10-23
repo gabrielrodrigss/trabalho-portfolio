@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Oliveira</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Obs: os icones neste código fora utilizados sem o auxílio do brootstap. Todos os itens neste código foram implementado com 
+    html e css puro -->
+</head>
+<body>
+    <header>
+        <div class="container"> <!-- A classe container, é um classe geral usada para estilizar as div pai-->
+            <div class="logo">
+                <a href="">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div> <!-- Logo do cabeçalho-->
+
+            <nav> <!-- Menu de opções -->
+                <ul>
+                    <li><a href="#titulo01">Sobre Mim</a></li>
+                    <li><a href="#titulo02">Formação</a></li>
+                    <li><a href="#titulo03">Portfólio</a></li>
+                    <li><a href="#titulo04">Contato</a></li>
+                </ul>
+            </nav>
+        </div> <!-- Container -->
+    </header>
+
+    <main>
+        <section class="sobre-mim"> <!-- Implementação da estrutura da sessão sobre mim -->
+            <div class="container">
+            </div>
+            <h1 id="titulo01">Sobre mim</h1>
+            <h2>Gabriel Oliveira</h2>
+            <h3>Front-end Developer</h3>
+            <p>Olá, me chamo Gabriel, tenho 24 anos, sou do interior de Minas Gerais.<br> Gosto bastante de tecnologias, games, etc. Más ao mesmo tempo<br> gosto da roça, viajar, amo apreciar a natureza, gosto de<br> musculação. Me considero uma pessoa calma, me relaciono<br> bem com pessoas. Sou grato a vida em todos os sentidos<br> e me sinto previlegiado por tudo o que tenho.</p>
+
+            <div class="btn-contato">
+                <a href="#titulo04">
+                    <button>Entre em Contato</button>
+                </a>
+            </div>
+            <div>
+            </div>
+        </section>
+
+        <section class="formacao"> <!-- Implementação da estrutura da sessão formação -->
+            <div class="container">
+                <h2 class="titulo" id="titulo02">Minha Formação.</h2>
+                <div class="flex">
+                    <div class="formacao-box">
+                        <img src="./img/processador.png" alt="">
+                        <h3>Técnico em Informática</h3>
+                        <p>Sou formado no curso de técnico em informática. Período de formação entre 2015 a 2017.</p>
+                    </div> <!--portfolio-box-->
+                    <div class="formacao-box">
+                        <img src="./img/computer.png" alt="">
+                        <h3>Análise e<br> Desenvolvimento<br> de Sistemas</h3>
+                        <p>Atualmente curso a graduação em Análise e Desenvolvimento de Sistemas pela UNINTER, com formação 
+                            prevista para 2025.</p>
+                    </div> <!--portfolio-box-->
+                    <div class="formacao-box">
+                        <img src="./img/java.png" alt="">
+                        <h3>Certificações</h3>
+                        <p>Possuo certificações na linguagem Java e Kotlin</p>
+                    </div> <!--portfolio-box-->
+                </div> <!--flex-->
+            </div> <!--container-->
+        </section> <!--formação-->
+
+        <section class="portfolio"> <!-- Implementação da sessão onde constam projetos no portfólio-->
+            <div class="container">
+                <h2 class="titulo" id="titulo03">Meu Portfolio.</h2>
+                <div class="flex">
+                    <a href="https://github.com/gabrielrodrigss/loja_virtual" target="_blank" rel="noopener noreferrer">
+                        <div class="img-port" style="background-image: url(img/loja.jpg);">
+                            <div class="overlay">Projeto loja</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/gabrielrodrigss/XloMobX" target="_blank" rel="noopener noreferrer">
+                        <div class="img-port" style="background-image: url(img/xlo.png);">
+                            <div class="overlay">Projeto xlo</div>
+                        </div>
+                    </a>
+                    <div class="img-port" style="background-image: url(img/tarefa.jpg);">
+                        <div class="overlay">Projeto tarefa</div>
+                    </div>
+                </div> 
+            </div> <!--container-->
+        </section> <!--portfolio-->
+
+        <section class="formulario"> <!-- Sessão de formulários -->
+            <div class="container">
+                <h2 class="titulo" id="titulo04">Fala <span>Comigo.</span></h2>
+
+                <form action="">
+                    <input type="text" class="text" placeholder="Seu nome completo" required>
+                    <input type="text" class="text" placeholder="Seu e-mail" required>
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div> <!--Container-->
+        </section> <!--Formulario-->
+    </main>
+
+    <footer> <!-- Aqui foi feito um rodapé, com meios de contatos e redes sociais-->
+        <div class="container">
+            <div class="line">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="img/logo.png" alt="">
+                    </div> <!--Logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/_gabrod/"><button><img src="./img/instagram.png" alt=""></i></button></a>
+                        <a href="https://www.linkedin.com/in/gabrielor99/"><button><img src="./img/linked-in.png" alt=""></i></button></a> 
+                    </div> <!--btn-social-->
+                </div>
+            </div> <!--line-footer-->
+
+            <div class="line border">
+                <p><img src="./img/email.png" alt=""></i> <a href="mailto:gabrielrrodrigues133@gmail.com">gabrielrrodrigues133@gmail.com</a></p>
+            </div>
+        </div> <!--container-->
+    </footer>
+</body>
+</html>

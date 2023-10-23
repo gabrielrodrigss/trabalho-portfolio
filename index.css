@@ -1,0 +1,318 @@
+/* Estilização gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 90px;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FFD700;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+}
+
+h2.titulo {
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Estilização do cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #4f4e4e;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover { /*Quando o usuário passar o mause por cima, acontecerá algo*/
+    color: #7E1DB3;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 100px;
+}
+
+/*Estilização sobre mim*/
+section.sobre-mim {
+    padding: 90px 10%;
+    box-shadow: 0 0 40px 10px #b135f3;
+}
+
+.sobre-mim {
+    height: 100vh;
+    width: 100vw;
+    background-color: #7E1DB3;
+    background-image: url('./img/gabriel.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+
+.sobre-mim h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-bottom: 50px;
+}
+
+.sobre-mim h2{
+    text-transform: uppercase;
+    letter-spacing: 4px; 
+    
+}
+
+.sobre-mim h3 {
+    padding-bottom: 20px;
+    color: #FFD700;
+}
+
+.sobre-mim p {
+    padding-bottom: 30px;
+}
+
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #c571f3;
+    transform: scale(1.05);
+}
+
+/*Estilização Formação*/
+section.formacao {
+    padding: 90px 4%;
+}
+
+section.formacao .flex {
+    gap: 60px;
+}
+
+.formacao .formacao-box {
+    color: #ffffff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.formacao .formacao-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff6f;
+}
+
+.formacao .formacao-box img {
+    width: 60px;
+    height: 60px;
+}
+
+.formacao .formacao-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/*Estilização do Portfólio*/
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #b135f3;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.portfolio {
+    background-color: #7E1DB3;
+}
+
+.portfolio .flex {
+    background-color: #300746;
+    border-radius: 40px;
+    height: 500px;
+    align-items: center;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Estilização do formulário de contato */
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #7E1DB3;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*Estilização roda-pé*/
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 20px #ffffff6f;
+}
+
+footer .flex {
+    justify-content: space-between;
+
+}
+
+footer .line {
+    padding: 20px 0;
+}
+
+.border {
+    border-top: 2px solid #7E1DB3;
+}
+
+footer .line p img {
+    color: #7E1DB3;
+    font-size: 22px;
+    width: 25px;
+    height: 25px;
+}
+
+footer .line .btn-social a img {
+    width: 40px;
+    height: 40px;
+}
+
+footer .line p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7E1DB3;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    align-items: center;
+}
+
